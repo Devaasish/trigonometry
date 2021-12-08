@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    flex-wrap: wrap;
+    text-decoration: none;
+    outline: none;
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #1D2671, #C33764);
+    background-size: 400%;
+    animation: gradient 11s ease infinite;
+}
+
+@keyframes gradient {
+    100% {
+        background-position: 400%;
+    }
+}
+
+.calculator {
+    display: grid;
+    place-items: center;
+    background: #000040;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 30px white;
+}
+
+.calculator .showcase {
+    padding: 10px;
+}
+
+.calculator .showcase .scInput {
+    width: 515px;
+    height: 50px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
+    border: none;
+    background: #2ecc71;
+    color: white;
+    font-weight: 600;
+}
+
+.calculator .showcase .scInput::placeholder {
+    color: white;
+}
+
+.calculator .btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.calculator .btns .ratio-grid {
+    display: grid;
+}
+
+.ratio-grid button {
+    padding: 20px;
+    cursor: pointer;
+    background: #1616bd;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.ratio-grid button:hover {
+    background: #09098d;
+}
+
+.ratio-grid button:focus {
+    box-shadow: inset 0px 0px 19px white;
+}
+
+.calculator .btns .num-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.num-grid button {
+    width: 90px;
+    font-size: 20px;
+    padding: 0px;
+    background: #cfa329;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.num-grid button:hover {
+    background: #9c7300;
+}
+
+.goBack {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.goBack img {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+    .num-grid button {
+        width: 70px;
+    }
+
+    .ratio-grid button {
+        padding: 10px;
+    }
+
+    .calculator .showcase .scInput {
+        width: 400px;
+        font-size: 21px;
+    }
+}
