@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigonometric Values</title>
+    <link rel="stylesheet" href="../styles/val-styles.css">
+</head>
+<body>
+    <audio src="../music.mp3" class="music" loop></audio>
+
+    <div class="calculator">
+        <div class="showcase">
+            <input type="text" placeholder="Type here (or) Click below to Calculate" class="scInput">
+        </div>
+
+        <div class="btns">
+            <div class="ratio-grid">
+                <button class="sin" onclick="addSin()">Sin</button>
+                <button class="cos" onclick="addCos()">Cos</button>
+                <button class="tan" onclick="addTan()">Tan</button>
+                <button class="cosec" onclick="addCosec()">Cosec</button>
+                <button class="sec" onclick="addSec()">Sec</button>
+                <button class="cot" onclick="addCot()">Cot</button>
+            </div>
+    
+            <div class="num-grid">
+                <button id="one" onclick="addNumText('1')">1</button>
+                <button id="two" onclick="addNumText('2')">2</button>
+                <button id="three" onclick="addNumText('3')">3</button>
+                <button id="four" onclick="addNumText('4')">4</button>
+                <button id="five" onclick="addNumText('5')">5</button>
+                <button id="six" onclick="addNumText('6')">6</button>
+                <button id="seven" onclick="addNumText('7')">7</button>
+                <button id="eight" onclick="addNumText('8')">8</button>
+                <button id="nine" onclick="addNumText('9')">9</button>
+                <button id="zero" onclick="addNumText('0')">0</button>
+                <button id="clear" onclick="clearText()">CLEAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="goBack">
+        <img src="https://img.icons8.com/dusk/64/000000/circled-left.png" onclick="navBack()"/>
+    </div>
+</body>
+<script src="../scripts/Val.js"></script>
+</html>
